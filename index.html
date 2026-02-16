@@ -6,5 +6,53 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="column-left">
+      <img src="images/mountain.jpg" alt="Snowy mountain" />
+      <div class="background-logo">
+        <img src="images/odin-lined.png" alt="Odin Logo" class="logo" />
+        <p class="logo-text">ODIN</p>
+      </div>
+      <p class="image-credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@zuninside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Lorenzo Zunino</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/snowy-mountain-peak-under-a-clear-blue-sky-l6x954tJsaA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+    <div class="column-right">
+      <p class="description"></p>
+      <form action="" class="signup">
+        <div>
+          <h2 class="form-title">Let's do this</h2>
+          <input type="text" name="firstname" id="firstname" />
+          <label for="firstname">First name</label>
+          <input type="text" name="lastname" id="lastname" />
+          <label for="lastname">Last name</label>
+          <input type="email" name="email-address" id="email-address" />
+          <label for="email-address">Email</label>
+          <input type="number" name="phone-number" id="phone-number" />
+          <label for="phone-number">Phone number</label>
+          <input type="password" name="password" id="password" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+          <label for="confirm-password">Confirm password</label>
+        </div>
+        <div>
+          <button type="submit">Create account</button>
+          <p>Already have an account? Log in</p>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
