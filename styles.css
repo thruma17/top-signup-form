@@ -278,8 +278,13 @@ body {
   display: flex;
 }
 
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./Norse-Bold.otf");
+}
+
 .column-left {
-  background-size: cover;
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -293,13 +298,38 @@ body {
   display: flex;
 }
 
-.background-logo {
-  display: flex;
+.background-image {
+  min-height: 100vh;
 }
 
-.logo,
+.background-logo {
+  position: absolute;
+  top: 33%;
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 1rem;
+  max-width: 15vh;
+}
+
 .logo-text {
-  width: 50%;
+  font-family: "Norse Bold";
+  font-size: 5rem;
+}
+
+.image-credits {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-credits a {
+  color: white;
 }
 
 button {
