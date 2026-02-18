@@ -276,6 +276,7 @@ CUSTOM CSS
 body {
   min-height: 100vh;
   display: flex;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -345,20 +346,39 @@ body {
   padding: 1rem;
 }
 
+.form-inputs h2 {
+  color: #1b4646;
+}
+
 .form-inputs {
+  font-weight: 100;
   background-color: white;
   box-shadow: 0px 15px 20px 0px #ececec;
   padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .input-row {
   display: flex;
+  gap: 4rem;
 }
 
 .input-element {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  max-width: 40%;
+  flex: 1;
+}
+
+.input-element label {
+  text-transform: uppercase;
+}
+
+.input-element input {
+  border-radius: 5px;
+  border: solid 1px #ececec;
 }
 
 button {
