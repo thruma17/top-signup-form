@@ -17,18 +17,20 @@
         <img src="images/odin-lined.png" alt="Odin Logo" class="logo" />
         <p class="logo-text">ODIN</p>
       </div>
-      <p class="image-credits">
-        Photo by
-        <a
-          href="https://unsplash.com/@zuninside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Lorenzo Zunino</a
-        >
-        on
-        <a
-          href="https://unsplash.com/photos/snowy-mountain-peak-under-a-clear-blue-sky-l6x954tJsaA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Unsplash</a
-        >
-      </p>
+      <div class="image-credits">
+        <p class="credits">
+          Photo by
+          <a
+            href="https://unsplash.com/@zuninside?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Lorenzo Zunino</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/snowy-mountain-peak-under-a-clear-blue-sky-l6x954tJsaA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
     </div>
     <div class="column-right">
       <div class="description">
@@ -65,7 +67,13 @@
           <div class="input-row">
             <div class="input-element">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                maxlength="16"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+              />
             </div>
             <div class="input-element">
               <label for="confirm-password">Confirm password</label>
@@ -73,11 +81,13 @@
                 type="password"
                 name="confirm-password"
                 id="confirm-password"
+                maxlength="16"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
               />
             </div>
           </div>
         </div>
-        <div>
+        <div class="container-login">
           <button type="submit">Create account</button>
           <p class="login">Already have an account? <a href="#">Log In</a></p>
         </div>
